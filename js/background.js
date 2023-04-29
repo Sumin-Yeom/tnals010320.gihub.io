@@ -1,0 +1,82 @@
+// const images = ["강아지동산.jpg", "강아지동산2.jpg", "개구리마을.jpg", "생일축하해.jpg",
+// "008ughm4gy1h5outpygjwj310225vtk6.jpg",
+// "008ughm4gy1h5outrnh6kj310225vn67.jpg",
+// "008ughm4gy1h5outsz86hj310225v16m.jpg",
+// "008ughm4gy1h5outtm4brj310225vwq8.jpg",
+// "008ughm4gy1h5outu66wjj310225vgv9.jpg",
+// "008ughm4gy1h5outunrwjj310225vwk1.jpg",
+// "008ughm4gy1h5outvlkh3j310225v49b.jpg",
+// "008ughm4gy1h6ff6p6flqj30ot0otk1q.jpg",
+// "008ughm4gy1h6ff6qifu8j30ot0otaix.jpg",
+// "008ughm4gy1h6ff6qxa50j30ot0ottdi.jpg",
+// "008ughm4gy1h6ff6rli2gj30ot0ottf2.jpg",
+// "008ughm4gy1h6mmsczickj30u00u0go8.jpg",
+// "008ughm4gy1h6mmsdezybj30u00u00xr.jpg",
+// "008ughm4gy1h6mmsdpxi1j30u00u00v0.jpg",
+// "008ughm4gy1h6mmse0vtvj30u00u0gov.jpg",
+// "008ughm4gy1h6t1qfu08rj30u00u00uj.jpg",
+// "008ughm4gy1h6t1qg6suxj30u00u040x.jpg",
+// "008ughm4gy1h7cuoxa601j30ot0otmzm.jpg",
+// "008ughm4gy1h7cuoxs5uqj30ot0otae2.jpg",
+// "008ughm4gy1h7cuoy9qvkj30ot0otgoe.jpg",
+// "008ughm4gy1h7cuoyopwxj30ot0ot42p.jpg",
+// "008ughm4gy1h7cuoz4gmgj30ot0ot777.jpg",
+// "008ughm4gy1h7cuozhurfj30ot0otdkg.jpg",
+// "008ughm4gy1h7cuozxmwkj30ot0otgo7.jpg",
+// "008ughm4gy1h7cup0eushj30ot0otq70.jpg",
+// "008ughm4gy1h7cup164gnj30ot0ot0wv.jpg",
+// "008ughm4gy1h686x1l6q2j30ot0ot45i.jpg",
+// "008ughm4gy1h686x1xrrwj30ot0otwi2.jpg",
+// "008ughm4gy1h686x28losj30ot0otmzh.jpg",
+// "008ughm4gy1h686x1817yj30ot0otwkb.jpg",
+// "008ughm4gy1hantrvvx6mj310225vgs8.jpg",
+// "008ughm4gy1hauu7twmeyj30wbaf2e82.jpg",
+// "008ughm4gy1hbo5rvduk7j310225vwsz.jpg",
+// "008ughm4gy1hbo5rvvg06j310225vtoh.jpg",
+// "008ughm4gy1hbo5rws8s3j310225vwmn.jpg",
+// "008ughm4gy1hbo5rxckd9j310225vh0w.jpg",
+// "008ughm4gy1hbo5rxvr7dj310225v16q.jpg",
+// "008ughm4gy1hbo5ryaphkj310225v7hs.jpg",
+// "008ughm4gy1hbo5rypyecj310225vqiy.jpg",
+// "008ughm4gy1hbo5rz5nhbj310225v10x.jpg",
+// "008ughm4gy1hbo5rzo2paj310225v1dq.jpg",
+// "008ughm4gy1hc1uqo3z2zj30ot0ottbf.jpg",
+// "008ughm4ly1hcpqtv2aybj310225v146.jpg",
+// "008ughm4ly1hcpqtvggfsj310225vtho.jpg",
+// "008ughm4ly1hcpqtvvr0wj310225v111.jpg",
+// "008ughm4ly1hcpqtxfet8j310225v10g.jpg",
+// "008ughm4ly1hcpqtxssokj310225vaih.jpg",
+// "008ughm4ly1hcpqty6xr9j310225vqcz.jpg",
+// "008ughm4ly1hcpqtymwldj310225v7er.jpg",
+// "008ughm4ly1hcpqtz33jnj310225vwpr.jpg",
+// "008ughm4ly1hcpqtzh7wjj310225vtif.jpg",
+// "20210102흰소의_해.jfif",
+// "20211229_눈덮인_마을.jfif",
+// "ha35nByVlx082FPrXPW80104120005kE0E010.gif",];
+
+const images = [
+  "andy-vult-bs4qtd2NsGI-unsplash.jpg",
+  "austin-neill-IraMdOH78NE-unsplash.jpg",
+  "casey-horner-_aQ-61m_Ldo-unsplash.jpg",
+  "christian-becker-kQkAqT7K4v0-unsplash.jpg",
+  "devin-avery-bx1G9db3FjA-unsplash.jpg",
+  "javardh-kTJ8MnqQozg-unsplash.jpg",
+  "joshua-earle-C6duwascOEA-unsplash.jpg",
+  "kurt-von-jNN9eZdPC5M-unsplash.jpg",
+  "lightscape-U1vuL9fbtlc-unsplash.jpg",
+  "matt-hardy-6ArTTluciuA-unsplash.jpg",
+  "peter-f-fibrknjbpUo-unsplash.jpg",
+  "quentin-lagache-bqk51Qh0oyc-unsplash.jpg",
+  "weroad-90mPwgjGgf8-unsplash.jpg",
+];
+
+
+const IMAGE_CLASS_NAME = "background"
+const imagesIndex = Math.floor(Math.random() * images.length);
+const randImageName = images[imagesIndex];
+
+const todaysImage = document.createElement("img");
+todaysImage.classList.add(IMAGE_CLASS_NAME);
+todaysImage.src = `img/${randImageName}`;
+
+document.body.appendChild(todaysImage);
